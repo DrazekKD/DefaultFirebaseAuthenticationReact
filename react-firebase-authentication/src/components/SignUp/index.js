@@ -2,8 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import  * as ROUTES from '../../constants/routes'
 import { FirebaseContext } from '../Firebase';
-
-import SignUpForm from './SignUpForm';
+import SignUpFormBase from './SignUpFormBase';
 
 const SignUpPage = () => (
 	<div>
@@ -19,6 +18,8 @@ const SignUpLink = () => (
 		Don't have an account? <Link to={ROUTES.SIGN_UP}>Sign Up</Link>
 	</p>
 );
-export default SignUpPage;
 
+const SignUpForm = SignUpFormBase;
+
+export default SignUpPage;
 export {SignUpForm, SignUpLink}
