@@ -2,7 +2,7 @@ import React,{Component} from 'react';
 import  * as ROUTES from '../../constants/routes'
 import { compose } from 'recompose';
 import { withFirebase } from '../Firebase';
-import {Link, withRouter } from 'react-router-dom'
+import { withRouter } from 'react-router-dom'
 const INITIAL_STATE = {
 	email: '',
 	password: '',
